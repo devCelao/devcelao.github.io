@@ -1,0 +1,37 @@
+:root{
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    & > div{
+        height: 100vh;
+    }
+
+    & .main-img{
+        width: 40vw;
+        background-color: #2b2c2c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+
+        & .round-image {
+            border-radius: 50%; /* This creates the circular shape */
+            width: 200px; /* Width of the image */
+            height: 200px; /* Height of the image */
+            box-shadow: 0 0 8px rgba(0,0,0,0.3); /* Optional: Adds a shadow effect */
+          }
+    }
+
+    & .main-desc{
+        width: 60vw;
+        background-color: #2d2e2e;
+    }
+}
